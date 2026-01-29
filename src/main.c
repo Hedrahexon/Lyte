@@ -50,7 +50,7 @@ static void get_exe_filename(char *buf, int sz) {
   unsigned size = sz;
   _NSGetExecutablePath(buf, &size);
 #else
-  strcpy(buf, "./lite");
+  strcpy(buf, "./lyte");
 #endif
 }
 
@@ -89,7 +89,7 @@ int main(int argc, char **argv) {
   ren_init(window);
 
   // NOTE: added when porting to SDL3
-  //   This call is required in SDL3 for Lite's usage (It needs TextInput events and I tested original lite to confirm that they are sent with each letter KEYDOWN)
+  //   This call is required in SDL3 for Lite/Lyte's usage (It needs TextInput events and I tested original lite to confirm that they are sent with each letter KEYDOWN)
   //   (It seems that it was automatically called in SDL2, or where was that call ?)
   if (!SDL_StartTextInput(window))
   {
@@ -128,7 +128,7 @@ int main(int argc, char **argv) {
   (void) luaL_dostring(L,
   "local core\n"
   "xpcall(function()\n"
-  "  SCALE = tonumber(os.getenv(\"LITE_SCALE\")) or SCALE\n"
+  "  SCALE = tonumber(os.getenv(\"LYTE_SCALE\")) or SCALE\n"
   "  PATHSEP = package.config:sub(1, 1)\n"
   "  EXEDIR = EXEFILE:match(\"^(.+)[/\\\\].*$\")\n"
   "  local function dir_exists(path)\n"
@@ -136,7 +136,7 @@ int main(int argc, char **argv) {
   "    if f then f:close(); return true end\n"
   "    return false\n"
   "  end\n"
-  "  DATADIR = '/usr/local/share/lite'\n"
+  "  DATADIR = '/usr/local/share/lyte'\n"
   "  if not dir_exists(DATADIR) then\n"
   "    DATADIR = EXEDIR .. '/data'\n"
   "  end\n"

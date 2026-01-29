@@ -11,6 +11,6 @@ gcc src/*.c src/api/*.c src/lib/lua52/*.c src/lib/stb/*.c^
     -Iwinlib/SDL3-3.2.16/x86_64-w64-mingw32/include^
     -lmingw32 -lm -lSDL3 -Lwinlib/SDL3-3.2.16/x86_64-w64-mingw32/lib^
     -mwindows res.res^
-    -o lite.exe
+    -o lyte.exe
 
 echo done

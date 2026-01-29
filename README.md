@@ -1,7 +1,7 @@
-# lite
+# Lyte
 ![screenshot](https://user-images.githubusercontent.com/3920290/81471642-6c165880-91ea-11ea-8cd1-fae7ae8f0bc4.png)
 
-A lightweight text editor written in Lua
+A lightweight text editor written in Lua, forked from lite
 
 * **[Get lite](https://github.com/rxi/lite/releases/latest)** — Download
   for Windows and Linux
@@ -12,7 +12,7 @@ A lightweight text editor written in Lua
   themes
 
 ## Overview
-lite is a lightweight text editor written mostly in Lua — it aims to provide
+Lyte is a lightweight text editor written mostly in Lua — it aims to provide
 something practical, pretty, *small* and fast, implemented as simply as
 possible; easy to modify and extend, or to use without doing either.
 
@@ -21,7 +21,7 @@ Additional functionality can be added through plugins which are available from
 the [plugins repository](https://github.com/rxi/lite-plugins); additional color
 themes can be found in the [colors repository](https://github.com/rxi/lite-colors).
 The editor can be customized by making changes to the
-[user module](data/user/init.lua).
+[user module](/usr/local/share/lyte/user/init.lua or data/usr/init.lua).
 
 ## Building
 You can build the project yourself on Linux using the `build.sh` script
