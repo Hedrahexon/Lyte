@@ -174,7 +174,7 @@ end
 
 function core.load_plugins()
   local no_errors = true
-  local files = system.list_dir(EXEDIR .. "/data/plugins")
+  local files = system.list_dir(DATADIR .. "/plugins")
   for _, filename in ipairs(files) do
     local modname = "plugins." .. filename:gsub(".lua$", "")
     local ok = core.try(require, modname)
