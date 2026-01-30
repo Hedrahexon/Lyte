@@ -136,7 +136,7 @@ int main(int argc, char **argv) {
   "    if f then f:close(); return true end\n"
   "    return false\n"
   "  end\n"
-  "  DATADIR = '/usr/local/share/lyte'\n"
+  "  DATADIR = '/usr/share/lyte'\n"
   "  if not dir_exists(DATADIR) then\n"
   "    DATADIR = EXEDIR .. '/data'\n"
   "  end\n"

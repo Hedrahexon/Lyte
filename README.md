@@ -15,6 +15,8 @@ A lightweight text editor written in Lua, forked from lite
 Lyte is a lightweight text editor written mostly in Lua — it aims to provide
 something practical, pretty, *small* and fast, implemented as simply as
 possible; easy to modify and extend, or to use without doing either.
+The data directory should either be placed in the same directory as the lyte
+executable or its contents should be placed in /usr/local/share/lyte (only for Unix/Linux systems).
 
 ## Customization
 Additional functionality can be added through plugins which are available from
